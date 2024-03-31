@@ -1,0 +1,21 @@
+.product-link {
+    @apply relative mb-2 flex flex-col transition-opacity duration-300 
+		ease-in-out md:size-full xl:size-full;
+
+		& .product-image {
+			@apply z-20 transition-opacity duration-300 ease-in-out
+                object-cover object-top h-48;
+			mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+			transition: filter 0.3s ease;
+		}
+    cursor: pointer;
+    
+    &:active, add-to-cart-bttn:active {
+        cursor: grabbing;
+    }
+}
+.product-link:hover .product-image,
+	.product-link.active .product-image {
+		scale: 1.05;
+        filter: saturate(120%);
+	}
