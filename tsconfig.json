@@ -10,6 +10,7 @@
       "@shared/*":["app/shared/*"],
       "@models/*":["app/models/*"],
       "@envs/*":["environments/*"],
+      "@layaout/*":["app/layaout/*"],
     },
     "strict": true,
     "noImplicitOverride": true,
