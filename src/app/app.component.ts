@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ProductsService } from '@api/products.service';
 import { HeaderComponent } from '@layaout/header/header.component';
 
 @Component({
