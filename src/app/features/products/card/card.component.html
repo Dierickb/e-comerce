@@ -21,7 +21,8 @@
             <p class="text-2xl font-bold text-orange-500">
                {{product().price}}
             </p>
-            <button class="add-to-cart-bttn px-2 py-1 text-white bg-orange-500 rounded hover:bg-orange-700">
+            <button (click)="onAddtoCart()"
+            class="add-to-cart-bttn px-2 py-1 text-white bg-orange-500 rounded hover:bg-orange-700">
                 Add to cart
             </button>
         </div>
