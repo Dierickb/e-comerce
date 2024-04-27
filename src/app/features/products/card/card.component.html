@@ -1,6 +1,6 @@
 <div class="p-4 mt-2 h-full rounded-xl hover:shadow-xl bg-slate-100">
     <div class="col-span-2 rounded-xl lg:col-span-2 h-70">
-        <a class="product-link w-full h-auto" [routerLink]="['/products, (product().id)']">
+        <a class="product-link w-full h-auto" [routerLink]="['/products', product().id]">
             <img 
                 class="product-image"
                 src="{{product().image}}"    
@@ -13,7 +13,7 @@
             {{product().category}}
         </h3>
         <h2 class="py-4 text-lg font-medium text-gray-900 title-font">
-            <a [routerLink]="['/products, (product().id)']">
+            <a [routerLink]="['/products', product().id]">
                 {{product().title}}
             </a>
         </h2>
