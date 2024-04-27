@@ -2,7 +2,7 @@ import { CurrencyPipe } from '@angular/common';
 import { Component, OnInit, Signal, inject, input } from '@angular/core';
 import { ProductsService } from '@api/products.service';
 import { Product } from '@shared/models/product.interface';
-import { starComplete, starIncomplete, notStar } from './starse';
+import { starComplete, starIncomplete, notStar } from './stars';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
